@@ -56,6 +56,6 @@ summary { list-style-type: none; }
 }
 .accordion_img {
     padding: 20px;
-    width: 600px;
-    height: 300px;
+    width: 100%;
 }
+
