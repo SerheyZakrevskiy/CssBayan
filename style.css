@@ -16,7 +16,6 @@ summary { list-style-type: none; }
 
 .accordion {
     max-width: 620px;
-    box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.4);
     overflow: hidden;
 }
 
@@ -24,9 +23,11 @@ summary { list-style-type: none; }
     color: rgb(0, 0, 0);
 }
 .accordion__title {
+    
     width: 100%;
-    text-align: center;
+    text-align: start;
     font-size: 20px;
+    font-weight: 600;
     outline: none;
     cursor: pointer;
     border-bottom: 1px solid #777;
@@ -34,15 +35,27 @@ summary { list-style-type: none; }
     transition: 0.1s all;
     position: relative;
 }
+.accordion__title:hover {
+    color: rgb(3, 184, 245);
+}
 .accordion__title:active {
     color: blue;
 }
 .accordion__title::after {
     display: block;
     content: "✚";
-    font-size: 12px;
+    font-size: 18px;
     position: absolute;
     right: 12px;
     top: 50%;
     transform: translateY(-50%);
+    transition: 0.5s all;
+}
+.accordion__item[open] .accordion__title::after {
+    transform: translateY(-50%) rotate(45deg);
+}
+.accordion_img {
+    padding: 20px;
+    width: 600px;
+    height: 300px;
 }
