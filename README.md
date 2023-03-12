@@ -1,2 +1,2 @@
 # CssBayan
-https://ZakrevskiySerhey.github.io/cssBayan/cssBayan/index.html
+https://symphonious-mochi-b39a31.netlify.app
